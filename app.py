@@ -17,7 +17,15 @@ def get_tasks():
 
 @app.route('/add_task')
 def add_task():
-    return render_template('addtask.html')
+    _categories=mongo.db.categories.find()
+    category_list = [category for category in _categories]
+    return render_template('addtask.html',
+            categories=category_list)
+@app.route('/insert_task',methods=['POST'])
+def insert_task():
+    tasks = mongo.db.tasks
+    tasks.insert_one(request.form.to_dict())
+    return redirect(url_for('get_tasks'))
 
 if __name__ =='__main__':
     app.run(host=os.environ.get('IP'),port=int(os.environ.get('PORT')),
