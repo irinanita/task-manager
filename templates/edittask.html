@@ -19,7 +19,6 @@
                 <label>Task Category</label>
             </div>
         </div>
-        {{task.category_name}}
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">assignment</i>
@@ -42,9 +41,10 @@
             </div>
         </div>
         <div class="row">
+            {{task.is_urgent}}
             <div class="switch">
                 <label>
-                    {% if task.is_urgent=="True" %}
+                    {% if task.is_urgent=="on" %}
                         <input id="is_urgent" name="is_urgent" type="checkbox" checked>
                     {% else %}
                         <input id="is_urgent" name="is_urgent" type="checkbox">
