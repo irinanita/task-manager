@@ -1,18 +1,23 @@
+# Task Manager
 
-     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.
-    '  .--./|  | ,---. ,--.,--. ,-|  || o   \  |  ||  .-.  \ |  .---'
-    |  |    |  || .-. ||  ||  |' .-. |`..'  |  |  ||  |  \  :|  `--, 
-    '  '--'\|  |' '-' ''  ''  '\ `-' | .'  /   |  ||  '--'  /|  `---.
-     `-----'`--' `---'  `----'  `---'  `--'    `--'`-------' `------'
-    ----------------------------------------------------------------- 
+This this a basic task manager project.
+
+## Features
+1. Add tasks
+2. Delete tasks
+3. Update Existing tasks
+4. Assign tasks as urgent
+5. Assign different categories
+6. Manage and create new categories
 
 
-Hi there! Welcome to Cloud9 IDE!
+## Technologies used
+1. Python
+2. FLask
+3. MongoDB (mLab)
+4. Cloud9 IDE
+5. Materialze Framework 
 
-To get you started, create some files, play with the terminal,
-or visit http://docs.c9.io for our documentation.
-If you want, you can also go watch some training videos at
-http://www.youtube.com/user/c9ide.
+## Deployment 
+Deployed on Heroku. 
 
-Happy coding!
-The Cloud9 IDE team
