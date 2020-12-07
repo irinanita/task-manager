@@ -5,7 +5,7 @@ from bson.objectid import ObjectId
 
 app =Flask(__name__)
 app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] ='mongodb://admin:ceckbrb05@ds253284.mlab.com:53284/task_manager'
+app.config["MONGO_URI"]=os.getenv("MONGODB_URI")
 
 mongo = PyMongo(app)
 
